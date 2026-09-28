@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { JsonLd } from "@/components/json-ld";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { categoryLabel } from "@/lib/categories";
 import { collectSources, companies, getCompany } from "@/lib/companies";
+import { companyJsonLd, companyPageTitle, pageMetadata } from "@/lib/seo";
 import type { SourceRef } from "@/lib/types";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
+
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   return companies.map((company) => ({ slug: company.slug }));
@@ -19,10 +23,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const company = getCompany(slug);
   if (!company) return { title: "Компания не найдена" };
-  return {
-    title: `${company.nameEn} · ${company.nameZh}`,
-    description: company.summary,
-  };
+  return pageMetadata(
+    `/companies/${company.slug}`,
+    companyPageTitle(company),
+    company.summary,
+  );
 }
 
 function SourceAnchor({ source }: { source: SourceRef }) {
@@ -42,6 +47,7 @@ export default async function CompanyPage({ params }: PageProps) {
 
   return (
     <>
+      <JsonLd data={companyJsonLd(company)} />
       <SiteHeader />
       <main className="site-shell dossier">
         <aside className="facts">
@@ -86,8 +92,10 @@ export default async function CompanyPage({ params }: PageProps) {
         </aside>
         <article>
           <p className="brand-kicker">{company.categories.map(categoryLabel).join(" · ")}</p>
-          <h1>{company.nameEn}</h1>
-          <p className="zh-title zh">{company.nameZh}</p>
+          <h1>
+            {company.nameEn}
+            <span className="zh-title zh">{company.nameZh}</span>
+          </h1>
           <p className="lede">{company.summary}</p>
           <p className="prose">{company.description}</p>
 

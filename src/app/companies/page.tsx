@@ -1,14 +1,12 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import { JsonLd } from "@/components/json-ld";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { categoryShort } from "@/lib/categories";
 import { companiesByName } from "@/lib/companies";
+import { companyIndexJsonLd, INDEX_DESCRIPTION, INDEX_TITLE, pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Все компании",
-  description: "Алфавитный указатель китайских ИИ-компаний.",
-};
+export const metadata = pageMetadata("/companies", INDEX_TITLE, INDEX_DESCRIPTION);
 
 export default function CompaniesPage() {
   const companies = companiesByName();
@@ -25,6 +23,7 @@ export default function CompaniesPage() {
 
   return (
     <>
+      <JsonLd data={companyIndexJsonLd(companies)} />
       <SiteHeader current="/companies" />
       <main className="site-shell directory">
         <header className="page-intro">

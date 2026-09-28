@@ -1,11 +1,16 @@
 import { Catalog } from "@/components/catalog";
+import { JsonLd } from "@/components/json-ld";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { companies } from "@/lib/companies";
+import { HOME_DESCRIPTION, HOME_TITLE, pageMetadata, websiteJsonLd } from "@/lib/seo";
+
+export const metadata = pageMetadata("/", HOME_TITLE, HOME_DESCRIPTION);
 
 export default function HomePage() {
   return (
     <>
+      <JsonLd data={websiteJsonLd()} />
       <SiteHeader current="/" />
       <main className="site-shell">
         <section className="hero">

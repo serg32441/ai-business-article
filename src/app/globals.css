@@ -402,10 +402,14 @@ a:focus-visible {
   font-weight: 560;
 }
 
-.zh-title {
-  margin: 0;
+.dossier h1 .zh-title {
+  display: block;
+  margin: 0.45rem 0 0;
+  font-family: var(--font-zh), sans-serif;
   font-size: clamp(1.8rem, 3vw, 2.4rem);
   font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.2;
 }
 
 .prose {

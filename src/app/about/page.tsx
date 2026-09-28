@@ -1,12 +1,9 @@
-import type { Metadata } from "next";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { companies } from "@/lib/companies";
+import { ABOUT_DESCRIPTION, ABOUT_TITLE, pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "О справочнике",
-  description: "Как устроен каталог китайских ИИ-компаний и чего в нём нет.",
-};
+export const metadata = pageMetadata("/about", ABOUT_TITLE, ABOUT_DESCRIPTION);
 
 export default function AboutPage() {
   return (
