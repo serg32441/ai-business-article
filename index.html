@@ -1,246 +1,251 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ИИ в бизнесе 2026 — От хайпа к прибыли | Экспертный разбор</title>
-    <meta name="description" content="Как компании используют ИИ для роста выручки на 40%. Кейсы, цифры, прогнозы. Готовый план внедрения.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .btn-primary { 
-            background-color: #10B981; 
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
-        }
-        .btn-primary:hover { 
-            background-color: #059669; 
-            transform: translateY(-2px);
-            box-shadow: 0 20px 40px rgba(16, 185, 129, 0.3);
-        }
-        .gradient-text {
-            background: linear-gradient(135deg, #10B981 0%, #059669 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .card {
-            background: rgba(20, 20, 25, 0.6);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: 16px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-        .stat-number {
-            font-size: 72px;
-            font-weight: 800;
-            letter-spacing: -0.04em;
-            line-height: 1.0;
-        }
-        @media (max-width: 768px) {
-            .stat-number { font-size: 48px; }
-            h1 { font-size: 36px !important; }
-            h2 { font-size: 28px !important; }
-        }
-        .scarcity-badge {
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.8; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЛизингСвод — каталог лизинговых компаний России</title>
+  <meta name="description" content="Агрегатор лизинговых компаний России: новый бизнес, портфель и специализация по рэнкингу «Эксперт РА» за 2025 год. Сравнение и подбор по виду имущества.">
+  <meta name="theme-color" content="#14211b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2314211b'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-size='12' font-family='Arial' fill='%23e3f08a'%3EЛС%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-[#0A0A0F] text-white">
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-[#0A0A0F]/80 backdrop-blur-md border-b border-white/5" style="height: 72px;">
-        <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
-            <div class="text-xl font-bold">AI Business Insights</div>
-            <a href="#article" class="text-sm text-gray-300 hover:text-white transition">Читать статью</a>
-        </div>
-    </nav>
+<body>
+  <a class="skip" href="#catalog">К каталогу</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#top">
+        <span class="logo-mark">ЛС</span>
+        ЛизингСвод
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Меню</button>
+      <nav class="site-nav" id="site-nav">
+        <a href="#catalog">Каталог</a>
+        <a href="#ranking">Рейтинг</a>
+        <a href="#segments">Сегменты</a>
+        <a href="#picker">Подбор</a>
+        <a href="#guide">Как выбрать</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center px-6 pt-20" style="padding-top: 120px;">
-        <div class="max-w-5xl mx-auto text-center">
-            <div class="mb-6">
-                <span class="inline-block px-4 py-2 bg-emerald-900/30 border border-emerald-500/30 rounded-full text-sm text-emerald-400">
-                    ЭКСПЕРТНЫЙ РАЗБОР 2026
-                </span>
-            </div>
-            <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight" style="font-weight: 800; letter-spacing: -0.04em;">
-                Искусственный интеллект<br>
-                <span class="gradient-text">в бизнесе:</span><br>
-                <span class="text-4xl md:text-5xl font-light text-gray-300">от хайпа к прибыли</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-                Как компании используют ИИ для роста выручки на <strong class="text-emerald-400">40%</strong> и что будет дальше. 
-                Кейсы, цифры, готовый план внедрения.
-            </p>
-            
-            <div class="scarcity-badge bg-red-900/20 border border-red-500/30 rounded-lg p-4 mb-10 max-w-lg mx-auto">
-                <p class="text-red-400 font-semibold text-sm">⚠️ ТОЛЬКО ФАКТЫ: Данные McKinsey, Gartner, реальные кейсы</p>
-            </div>
-            
-            <a href="#article" class="btn-primary text-white font-bold py-4 px-10 rounded-full text-lg inline-block shadow-2xl">
-                Читать статью
-            </a>
-            <p class="text-sm text-gray-500 mt-4">12 минут чтения • PDF-версия в конце</p>
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Рэнкинг 2025 · Эксперт РА</p>
+          <h1>Лизинговые компании России в одном своде</h1>
+          <p class="lede">Новый бизнес, портфель и специализация по виду имущества. Цифры из рэнкинга, без рекламных ставок и «одобрим за 5 минут».</p>
+          <form class="search" role="search" onsubmit="return false">
+            <input id="q" type="search" placeholder="Название, город или ИНН" aria-label="Поиск по каталогу" autocomplete="off">
+          </form>
+          <p class="search-meta" id="q-meta">Поиск по названию, городу, группе и ИНН. В режиме «Топ-20» он всё равно видит весь каталог.</p>
         </div>
+        <aside class="board" aria-label="Лидеры по новому бизнесу">
+          <h2>Новый бизнес 2025</h2>
+          <div id="board"></div>
+        </aside>
+      </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="py-20 bg-[#0D0D12]">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="grid md:grid-cols-3 gap-10">
-                <div class="text-center">
-                    <div class="stat-number gradient-text">40%</div>
-                    <p class="text-gray-300 mt-4">Рост EBITDA у компаний с ИИ</p>
-                </div>
-                <div class="text-center">
-                    <div class="stat-number gradient-text">85%</div>
-                    <p class="text-gray-300 mt-4">Удержание клиентов через предикцию</p>
-                </div>
-                <div class="text-center">
-                    <div class="stat-number gradient-text">75%</div>
-                    <p class="text-gray-300 mt-4">Взаимодействий через ИИ к 2028</p>
-                </div>
-            </div>
-        </div>
+    <section class="stats" aria-label="Рынок лизинга в 2025 году">
+      <div class="stat"><b>2 трлн ₽</b><span>новый бизнес рынка, −40% к 2024</span></div>
+      <div class="stat"><b>311 тыс.</b><span>новых сделок, −31% к 2024</span></div>
+      <div class="stat"><b>123</b><span>компании сдали анкету в рэнкинг</span></div>
+      <div class="stat"><b>~58%</b><span>портфеля у ГТЛК, ГПБЛ и СберЛизинга</span></div>
     </section>
 
-    <!-- Article Section -->
-    <section id="article" class="py-20 px-6">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center" style="letter-spacing: -0.02em;">
-                Почему ИИ больше не роскошь
-            </h2>
-            
-            <!-- Story Opening -->
-            <div class="card p-10 mb-12">
-                <p class="text-xl text-gray-300 leading-relaxed mb-6">
-                    Три года назад владелец сети кофеен в Сочи стоял перед проблемой: персонал не справлялся с обработкой заказов, 
-                    а наём новых сотрудников сжирал маржу. Он внедрил систему прогнозирования спроса на базе ИИ.
-                </p>
-                <div class="bg-emerald-900/20 border-l-4 border-emerald-500 p-6 rounded-r-lg">
-                    <p class="text-2xl font-semibold text-emerald-400">
-                        Результат: экономия 2,3 млн рублей за первый год и рост удовлетворённости клиентов на 34%.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Main Content -->
-            <div class="space-y-12 text-lg text-gray-300 leading-relaxed">
-                <p>
-                    Это не исключение. Это новая реальность бизнеса 2026 года. По данным McKinsey, компании, 
-                    внедрившие ИИ в ключевые процессы, показывают рост показателей в <strong class="text-white">1,5-2 раза быстрее</strong> конкурентов.
-                </p>
-
-                <h3 class="text-3xl font-bold text-white mt-16 mb-8">Три сферы, где ИИ работает уже сегодня</h3>
-                
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="card p-6">
-                        <div class="text-emerald-400 text-5xl font-bold mb-4">01</div>
-                        <h4 class="text-xl font-semibold text-white mb-4">Персонализация продаж</h4>
-                        <p>Netflix-style рекомендации для ваших клиентов. Средний чек растёт на 23%.</p>
-                    </div>
-                    <div class="card p-6">
-                        <div class="text-emerald-400 text-5xl font-bold mb-4">02</div>
-                        <h4 class="text-xl font-semibold text-white mb-4">Предиктивная аналитика</h4>
-                        <p>Система предсказывает отток за 3 месяца. Вы удерживаете 85% «уходящих».</p>
-                    </div>
-                    <div class="card p-6">
-                        <div class="text-emerald-400 text-5xl font-bold mb-4">03</div>
-                        <h4 class="text-xl font-semibold text-white mb-4">Автоматизация рутины</h4>
-                        <p>Боты обрабатывают 70% типовых запросов. Менеджеры занимаются сделками.</p>
-                    </div>
-                </div>
-
-                <!-- Case Study -->
-                <div class="card p-10 mt-16 bg-gradient-to-br from-emerald-900/20 to-transparent">
-                    <h3 class="text-3xl font-bold text-white mb-8">Кейс: рост потока на 200%</h3>
-                    <p class="mb-6">
-                        Частная клиника внедрила ИИ-ассистента для сбора анамнеза и записи.
-                    </p>
-                    <div class="space-y-4 mb-8">
-                        <div class="flex items-start gap-4">
-                            <span class="text-emerald-400 font-bold text-xl">→</span>
-                            <p>Время обработки заявки: <strong class="text-white">с 15 минут до 47 секунд</strong></p>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <span class="text-emerald-400 font-bold text-xl">→</span>
-                            <p>Конверсия в визит: <strong class="text-white">с 34% до 61%</strong></p>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <span class="text-emerald-400 font-bold text-xl">→</span>
-                            <p>Доход врачей: <strong class="text-white">рост на 45%</strong></p>
-                        </div>
-                    </div>
-                    <blockquote class="border-l-4 border-emerald-500 pl-6 italic text-xl text-gray-200">
-                        «Я думал, это игрушка. Но когда увидел, как ИИ сам заполняет карты и предлагает диагностику — 
-                        понял, что это мой самый эффективный сотрудник».
-                    </blockquote>
-                </div>
-
-                <!-- Objections -->
-                <h3 class="text-3xl font-bold text-white mt-16 mb-8">Почему ваши страхи напрасны</h3>
-                
-                <div class="card p-8">
-                    <h4 class="text-2xl font-semibold text-white mb-4">«Это слишком дорго»</h4>
-                    <p>Внедрение стоит как зарплата менеджера за 3 месяца. <strong class="text-emerald-400">Окупается за 4-6 месяцев.</strong></p>
-                </div>
-                <div class="card p-8">
-                    <h4 class="text-2xl font-semibold text-white mb-4">«ИИ заменит людей»</h4>
-                    <p>Нет. ИИ освобождает от рутины. Ваш лучший продавец станет в <strong class="text-emerald-400">3 раза продуктивнее</strong>.</p>
-                </div>
-                <div class="card p-8">
-                    <h4 class="text-2xl font-semibold text-white mb-4">«У нас нет данных»</h4>
-                    <p>У вас есть CRM, чаты, звонки. Этого достаточно. Системы работают и на малых данных.</p>
-                </div>
-            </div>
+    <section class="section" id="catalog">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">01 — Каталог</p>
+            <h2>Кого смотреть</h2>
+          </div>
+          <p class="section-note">Сначала общая двадцатка. Специалисты сегментов — во «Всём каталоге» или через фильтр имущества. Поиск в топ-20 видит и остальные карточки, а выбранный сегмент его сужает.</p>
         </div>
+        <div class="pills" id="pills"></div>
+        <div class="toolbar">
+          <select class="field" id="type-filter" aria-label="Тип компании"></select>
+          <select class="field" id="sort" aria-label="Сортировка">
+            <option value="rank">По месту в рэнкинге</option>
+            <option value="business">По новому бизнесу</option>
+            <option value="portfolio">По портфелю</option>
+            <option value="growth">По росту портфеля</option>
+            <option value="name">По названию</option>
+          </select>
+          <div class="scope" id="scope">
+            <button class="scope-btn is-on" type="button" data-scope="top" aria-pressed="true">Топ-20</button>
+            <button class="scope-btn" type="button" data-scope="all" aria-pressed="false">Весь каталог</button>
+          </div>
+        </div>
+        <p class="result-line" id="count" aria-live="polite"></p>
+        <div class="grid" id="grid"></div>
+      </div>
     </section>
 
-    <!-- Future Section -->
-    <section class="py-20 bg-[#0D0D12]">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-10" style="letter-spacing: -0.02em;">
-                Что будет через 2 года?
-            </h2>
-            <p class="text-2xl text-gray-300 mb-12 leading-relaxed">
-                Gartner прогнозирует: к 2028 году <strong class="text-emerald-400">75% взаимодействий</strong> с клиентами будет проходить через ИИ-агентов.
-            </p>
-            <div class="card p-10 max-w-2xl mx-auto">
-                <p class="text-xl text-gray-300 mb-6">
-                    Вопрос не в том, нужен ли вам ИИ.
-                </p>
-                <p class="text-2xl font-bold text-white">
-                    Вопрос в том, готовы ли вы проиграть конкурентам, которые его уже внедрили.
-                </p>
-            </div>
+    <section class="section" id="ranking" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">02 — Рейтинг</p>
+            <h2>Общий рэнкинг</h2>
+          </div>
+          <p class="section-note">Место считается по новому бизнесу за 2025 год. Портфель — остаток на 1 января 2026. Суммы нового бизнеса в источнике указаны без НДС.</p>
         </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Место</th>
+                <th>К 2024</th>
+                <th>Компания</th>
+                <th>Новый бизнес</th>
+                <th>Портфель</th>
+                <th>Портфель за год</th>
+                <th>Тип</th>
+              </tr>
+            </thead>
+            <tbody id="ranking-body"></tbody>
+          </table>
+        </div>
+      </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-20 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-8">Готовы внедрить ИИ в своём бизнесе?</h2>
-            <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-                Получите бесплатный аудит процессов и план внедрения ИИ под вашу нишу.
-            </p>
-            <a href="tel:+79153138254" class="btn-primary text-white font-bold py-5 px-12 rounded-full text-2xl inline-block shadow-2xl">
-                Получить консультацию
-            </a>
-            <p class="text-sm text-gray-400 mt-6">Ответим в течение 2 часов • Работаем по всей России</p>
+    <section class="section" id="segments">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">03 — Сегменты</p>
+            <h2>Кто силён в вашем имуществе</h2>
+          </div>
+          <p class="section-note">Общий лидер не всегда лидер нужного сегмента. У ГТЛК почти весь вес в транспорте, у Росагролизинга — в сельхозтехнике.</p>
         </div>
+        <div class="segment-layout">
+          <div class="seg-list" id="seg-list"></div>
+          <div>
+            <h3 id="seg-title"></h3>
+            <p class="fine" id="seg-hint"></p>
+            <div class="bars" id="bars" style="margin-top:16px"></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer class="bg-black py-10 text-center text-gray-500 border-t border-white/5">
-        <p>&copy; 2026 AI Business Insights. Все права защищены.</p>
-        <p class="mt-2">Профессиональное внедрение ИИ в бизнес • +7 915 313-82-54</p>
-    </footer>
+    <section class="section" id="picker">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">04 — Подбор</p>
+            <h2>С чего начать сравнение</h2>
+          </div>
+          <p class="section-note">Каталог не принимает заявки и не передаёт контакты. Он только сужает список, дальше — официальный сайт компании.</p>
+        </div>
+        <form class="picker-form" id="picker-form">
+          <label>Что берёте в лизинг
+            <select class="field" id="picker-segment" name="segment"></select>
+          </label>
+          <label>Кто клиент
+            <select class="field" id="picker-client" name="client"></select>
+          </label>
+          <button class="btn btn-dark" type="submit">Показать пятёрку</button>
+        </form>
+        <div id="picker-results"></div>
+      </div>
+    </section>
+
+    <section class="section" id="guide">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">05 — Ориентир</p>
+            <h2>Как читать этот свод</h2>
+          </div>
+        </div>
+        <div class="guide">
+          <article>
+            <p class="step-no">01</p>
+            <h3>Сначала предмет, потом бренд</h3>
+            <p>Компания из первой тройки общего рейтинга может почти не работать с вашим имуществом. Откройте сегмент и смотрите его собственный топ.</p>
+          </article>
+          <article>
+            <p class="step-no">02</p>
+            <h3>Не путайте портфель и новый бизнес</h3>
+            <p>Портфель — накопленный масштаб. Новый бизнес — сделки именно 2025 года. У Т-Лизинга портфель ещё небольшой, зато место в рэнкинге выросло с 25-го на 16-е.</p>
+          </article>
+          <article>
+            <p class="step-no">03</p>
+            <h3>Тип компании намекает на привычный клиент</h3>
+            <p>Розничные независимые и кэптивные игроки чаще заточены под типовой автопарк. Банковские группы и ГТЛК — под крупные и инфраструктурные сделки. Росагролизинг — отдельная государственная программа для агросектора.</p>
+          </article>
+          <article>
+            <p class="step-no">04</p>
+            <h3>Ставку берите на сайте компании</h3>
+            <p>Аванс, срок, страховка, баланс и досрочный выкуп рэнкинг не публикует. Этот сайт их не выдумывает. Участие в рэнкинге добровольное: анкету сдали 123 лизингодателя, на рынке их больше двухсот.</p>
+          </article>
+          <div class="glossary">
+            <h3>Словарь</h3>
+            <details open>
+              <summary>Новый бизнес</summary>
+              <p>Стоимость имущества, переданного в лизинг за период. В рэнкинге «Эксперт РА» показатель за 2025 год опубликован без НДС.</p>
+            </details>
+            <details>
+              <summary>Портфель</summary>
+              <p>Объём текущего лизингового портфеля на отчётную дату. Здесь это 1 января 2026 и, для динамики, 1 января 2025.</p>
+            </details>
+            <details>
+              <summary>Новые договоры</summary>
+              <p>Отдельная колонка источника. Она не равна новому бизнесу, поэтому в карточках подписана так же, как в таблице рэнкинга.</p>
+            </details>
+            <details>
+              <summary>Кэптивная компания</summary>
+              <p>Лизингодатель при производителе или дилере. В каталоге так отмечены КАМАЗ-ЛИЗИНГ и Мэйджор Лизинг.</p>
+            </details>
+          </div>
+          <div class="sources">
+            <h3>Откуда цифры</h3>
+            <p>Общая двадцатка, портфели и топы сегментов — <a href="https://www.all-leasing.ru/analitic/detail/1042465/" target="_blank" rel="noopener noreferrer">рэнкинг лизинговых компаний по итогам 2025 года</a>, all-leasing.ru, 12 марта 2026, по данным «Эксперт РА».</p>
+            <p>Объём рынка 2 трлн ₽ и −40%, 311 тысяч сделок и −31% — <a href="https://1prime.ru/20260310/ra-868158915.html" target="_blank" rel="noopener noreferrer">сообщение ПРАЙМ</a> со ссылкой на исследование «Эксперт РА» от 10 марта 2026.</p>
+            <p>Доли портфеля трёх лидеров — <a href="https://www.tadviser.ru/index.php/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D1%8F:%D0%9B%D0%B8%D0%B7%D0%B8%D0%BD%D0%B3_(%D1%80%D1%8B%D0%BD%D0%BE%D0%BA_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8)" target="_blank" rel="noopener noreferrer">обзор TAdviser «Лизинг (рынок России)»</a>. Страница рэнкингов агентства: <a href="https://raexpert.ru/rankings/leasing/" target="_blank" rel="noopener noreferrer">raexpert.ru</a>.</p>
+            <p>ЛизингСвод не аффилирован с лизинговыми компаниями и рейтинговым агентством. Карточка не заменяет кредитный рейтинг и не является публичной офертой.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div><strong>ЛизингСвод</strong><br>Агрегатор по открытому рэнкингу, 2026</div>
+      <div>Данные 2025 года · суммы нового бизнеса без НДС</div>
+    </div>
+  </footer>
+
+  <div class="tray" id="tray" hidden>
+    <div class="tray-slots" id="tray-slots"></div>
+    <button class="btn btn-lime" type="button" data-action="open-compare">Сравнить</button>
+    <button class="btn btn-ghost" type="button" data-action="clear-compare" style="color:#f6f1e6;border-color:rgba(246,241,230,.3)">Очистить</button>
+  </div>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <div class="dialog" id="dialog" hidden>
+    <div class="dialog-backdrop" data-action="close"></div>
+    <div class="dialog-panel" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
+      <button class="dialog-x" type="button" data-action="close">Закрыть</button>
+      <div id="dialog-body"></div>
+    </div>
+  </div>
+
+  <noscript>
+    <div class="wrap" style="padding:24px 0">
+      <p>Каталог, фильтры и сравнение включаются с JavaScript. Цифры рынка на странице видны и без него.</p>
+    </div>
+  </noscript>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
